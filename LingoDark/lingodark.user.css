@@ -1,0 +1,372 @@
+/* ==UserStyle==
+@name           LingoDark
+@namespace      github.com/urbancmc/userstyles
+@version        2021.5.21
+@description    Dark mode implementation for LingoDeer
+@author         UrbanCMC
+@homepageURL    https://github.com/urbancmc/userstyles
+@supportURL     https://github.com/urbancmc/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/urbancmc/userstyles/master/LingoDark/lingodark.user.css
+@license        MIT
+@var color text-color "Text color" #f1f2f3
+@var color text-dark-color "Dark text color" #b3b3b3
+@var color link-color "Link color" #459cf4
+@var color link-hover-color "Link hover color" #f6971b
+==/UserStyle== */
+@-moz-document domain("lingodeer.com") {
+    html {
+        background-color: #212121;
+    }
+
+    /* Content */
+    #app,
+    .mainCourse .mainContent .switchCourse .switchBottom,
+    .mainCourse .mainContent .switchCourse .switchBottom .wrap .wrapInner,
+    .switchBtn,
+    .optionsArea .option .item {
+        background-color: #212121 !important;
+    }
+
+    .unitList .skilltree,
+    .sidebar .section,
+    .popPanel,
+    .alphabet .sidebarArea .section,
+    .alphabet .alphabetMain,
+    .rippleOuter,
+    .wxy .recordPanel,
+    .unitDetailP .sidebarArea .unitDetailItemArea,
+    .unitContent,
+    .mainCourse .mainContent {
+        background-color: #323232 !important;
+    }
+
+    .rippleOuter:hover,
+    .article .panel,
+    .article .table .tr .td,
+    .article .row .col,
+    .linkList .link:hover,
+    .inputNumber .sideBtn,
+    .optionsArea .option .item:hover,
+    .optionsArea .resultArea .resultOption,
+    .stemArea .stemOption .stemItem.active,
+    .stemArea .stemOption .item.active,
+    .sentenceTitle .wrapOption.loc_p.active:hover {
+        background-color: #434343 !important;
+    }
+
+    .mainCourse .mainContent .switchCourse .switchBottom .wrap .wrapInner .checkFlag,
+    .mainCourse .mainContent .switchCourse .switchBottom .wrap .wrapInner .checkPanel .modelTipArea .nextCheckFlagDefault,
+    .mainCourse .mainContent .switchCourse .switchBottom .wrap .wrapInner .checkPanel .checkBtn,
+    .textAreaInput textarea {
+        background-color: #434343;
+    }
+
+    .jp .article .strong.dottedBorder:hover,
+    .optionsArea .option .item .tip.active,
+    .optionsArea .option.active .item {
+        background-color: #545454 !important;
+    }
+
+    .unitList .skilltree .wrap .wrapInner .oneUnit .lessonProgressText,
+    .unitList .skilltree .wrap .wrapInner .oneUnit .unitName,
+    .sidebar .section .progressTitle,
+    .sidebar .section .progressArea .canvasWrap .fireArea .progressNum,
+    .sidebar .section .recordContent .dayGoalArea div,
+    .sidebar .section .recordContent .scoreCard .card .cardInner div,
+    .popPanel .wrapPanel .modelSetting .switchContent .title,
+    .popPanel .wrapPanel .modelSetting .soundSet,
+    .popPanel .wrapPanel .modelSetting .audioSpeed,
+    .alphabet .alphabetMain .alphabetTitle,
+    .tBody.tr .td .tdInner,
+    .wxy .recordPanel .wrapArea,
+    .article .h1,
+    .article .label,
+    .article .row .col .title,
+    .article .panel .row,
+    .unitDetailP .sidebarArea .tipsText,
+    .unitContent .unitName,
+    .wordTitle,
+    .sentenceTitleGreyTranslation,
+    .inputNumber .numberWrap {
+        color: var(--text-color) !important;
+    }
+
+    .wordCardWord,
+    .optionsArea .option,
+    .sentenceTitleWord,
+    .optionsArea .option,
+    .scrollArea .translations,
+    .scrollArea .stemArea .stemOption .stemItem.active,
+    .scrollArea .stemArea .stemOption .item.active,
+    .sentenceTitle,
+    .sentenceStemOptionWord,
+    .textAreaInput textArea {
+        color: var(--text-color);
+    }
+
+    .el-radio,
+    .alphabet .sidebarArea .section .buttonArea .alpText,
+    .tBody.tr .td > .tdInner > div:last-child,
+    .wxy .recordPanel .wrapArea div:last-child,
+    .article .p,
+    .article .row .col .content,
+    .sentenceStemOptionPinyin,
+    .sentenceSliderPinyin,
+    .unitContent .wrapContent .lessons .lesson .wrapInner .subDescArea {
+        color: var(--text-dark-color) !important;
+    }
+
+    .mainCourse .mainContent .switchCourse .switchBottom .wrap .wrapInner .checkPanel .modelTipArea .nextCheckFlagDefault,
+    .wordCardPinyin,
+    .sentenceTitlePinyin,
+    .sentenceLearnTranslations {
+        color: var(--text-dark-color);
+    }
+
+    .unitList .skilltree .wrap .wrapInner .oneUnit .unitName._1,
+    .unitList .skilltree .wrap .wrapInner .oneUnit.alphabet .unitName,
+    .sidebar .section .recordContent .dayGoalArea div.editTargetBtn,
+    .rippleOuter .ripple,
+    .linkList .link {
+        color: var(--link-color) !important;
+        border-color: var(--link-color) !important;
+    }
+
+    .unitList .skilltree .wrap .wrapInner .oneUnit .unitName._1:hover,
+    .unitList .skilltree .wrap .wrapInner .oneUnit.alphabet .unitName:hover,
+    .sidebar .section .recordContent .dayGoalArea div.editTargetBtn:hover,
+    .rippleOuter .ripple:hover,
+    .linkList .link:hover,
+    .article .row .col:first-child .content {
+        color: var(--link-hover-color) !important;
+        border-color: var(--link-hover-color) !important;
+    }
+
+    .imgArea img.icon,
+    .unitContent .unitName .greyArrow,
+    .inputNumber .el-icon-minus,
+    .inputNumber .el-icon-plus {
+        filter: invert() !important;
+    }
+
+    .unitList .skilltree .wrap .wrapInner > div.left,
+    .wxy .panelSwitch .panel .tr > .td,
+    .alphabet .alphabetMain .alphabetTitle,
+    .article .table,
+    .article .table .tr .td,
+    .article .row,
+    .article .row .col,
+    .linkList .link {
+        border-color: #767676 !important;
+    }
+
+    .unitList .skilltree .wrap .wrapInner .oneUnit .hrLine {
+        background-color: #767676 !important;
+    }
+
+    .popPanel .wrapPanel .popPanelBottom .sureBtn:hover {
+        box-shadow: 1px 1px 1px 1px #111 !important;
+    }
+
+    /* Header */
+    .homeHeader .homeHeaderContent {
+        background-color: #212121;
+        border-color: #111;
+    }
+
+    .header .headerContent {
+        background-color: #212121;
+        box-shadow: 0px 0px 20px 1px #111;
+    }
+
+    .homeHeader .homeHeaderContent .logo img,
+    .header .headerContent .logo a img {
+        background-image: var(--logo);
+        background-size: 167px 17px;
+        padding-left: 167px;
+        box-sizing: border-box;
+    }
+
+    .homeHeader .homeHeaderContent .wrapInner .left .navArea .linkArea .navBtn.ripple.active a,
+    .header .headerContent .wrapInner .left .navArea .linkArea a {
+        color: var(--link-color);
+    }
+
+    .homeHeader .homeHeaderContent .wrapInner .left .navArea .linkArea .navBtn.ripple.active a:hover,
+    .header .headerContent .wrapInner .left .navArea .linkArea a.active,
+    .header .headerContent .wrapInner .left .navArea .linkArea a:hover {
+        color: var(--link-hover-color);
+    }
+
+    .header .headerContent .wrapInner .right .signArea .skillNav .choosedLans .lanName,
+    .header .headerContent .wrapInner .right .signArea .skillNav .lansChoosePanel .learnLabel,
+    .header .headerContent .wrapInner .right .signArea .skillNav .lansChoosePanel .addNewCourseBtn,
+    .toolTipPanel .panelContent .toolTipContent a {
+        color: var(--text-color) !important;
+    }
+
+    .lansChoosePanel .panelContent .content,
+    .userSettingPanel .panelContent .userSettingContent,
+    .toolTipPanel .panelContent .toolTipContent,
+    .wordTipPanel .panelContent .content {
+        background-color: #323232;
+        box-shadow: 2px 3px 15px 1px #111;
+        color: var(--text-color);
+    }
+
+    .header .headerContent .wrapInner .right .signArea .skillNav .lansChoosePanel .lansList .lanDiv:hover,
+    .header .headerContent .wrapInner .right .signArea .skillNav .lansChoosePanel .addNewCourseBtn:hover,
+    .header .headerContent .wrapInner .right .signArea .userSettingPanel .itemList .itemDiv:hover {
+        background-color: #434343;
+    }
+
+    .header .headerContent .wrapInner .right .signArea .skillNav .lansChoosePanel .addNewCourseBtn {
+        border-color: #111;
+    }
+
+    /* Landing Page */
+    .landPageP .pageContent .screen1 .screenWrap .floatArea .flagArea .startBtn,
+    .landPageP .pageContent .screen9 .screenWrap .sloganArea > div:last-child {
+        box-shadow: 0px 10px 10px 10px #111;
+    }
+
+    .landPageP .pageContent .screen2,
+    .landPageP .pageContent .screen4,
+    .landPageP .pageContent .screen6,
+    .landPageP .pageContent .screen8 {
+        background-color: #323232;
+    }
+
+    .landPageP .pageContent .screen2 .screenWrap .screen2Content .userComment .tweetgrid-list .tweetgrid-tweet .tweetgrid-bubble,
+    .landPageP .pageContent .screen3 .screen3Content div {
+        background-color: #434343;
+    }
+
+    .landPageP .pageContent .screen8 .screenWrap .loadBtnArea > div img {
+        filter: invert();
+    }
+
+    .landPageP .pageContent .screen1 .screenWrap .screenInner .title,
+    .landPageP .pageContent .screen2 .screenWrap .screen2Head,
+    .landPageP .pageContent .screen2 .screenWrap .screen2Content .userComment .tweetgrid-list .tweetgrid-tweet .tweetgrid-bubble .tweetgrid-content,
+    .landPageP .pageContent .screen2 .screenWrap .screen2Content .userComment .tweetgrid-list .tweetgrid-tweet .tweetgrid-meta .tweetgrid-author,
+    .landPageP .pageContent .screen2 .screenWrap .screen2Content .introduce > div > div:last-child,
+    .landPageP .pageContent .screen3 .screen3Head,
+    .landPageP .pageContent .screen3 .screen3Content > div > div:last-child > div:first-child,
+    .landPageP .pageContent .screen4 .screen4ContentArea .screen4Item > div:last-child,
+    .landPageP .pageContent .screen5 .screenWrap .repairArea > div:last-child .repairContent,
+    .landPageP .pageContent .screen6 .screenWrap .screen6Content > div:first-child > div:last-child,
+    .landPageP .pageContent .screen7 .screenWrap .setUpTitle,
+    .landPageP .pageContent .screen7 .screenWrap .setUpList > div > div:last-child > div:first-child,
+    .landPageP .pageContent .screen8 .screenWrap .downLoadText,
+    .landPageP .pageContent .screen9 .screenWrap .sloganArea > div:first-child {
+        color: var(--text-color);
+    }
+
+    .landPageP .pageContent .screen7 .screenWrap .setUpList > div > div:last-child > div:last-child,
+    .landPageP .pageContent .screen3 .screen3Content > div > div:last-child > div:last-child,
+    .landPageP .pageContent .screen9 .screenWrap .contactArea > div > div:first-child {
+        color: var(--text-dark-color);
+    }
+
+    .landPageP .pageContent .screen2 .screenWrap .screen2Content .userComment .tweetgrid-list .tweetgrid-tweet .tweetgrid-bubble .tweetgrid-content a,
+    .landPageP .pageContent .screen9 .screenWrap .contactArea a {
+        color: var(--link-color);
+    }
+
+    .landPageP .pageContent .screen2 .screenWrap .screen2Content .userComment .tweetgrid-list .tweetgrid-tweet .tweetgrid-bubble .tweetgrid-content a:hover,
+    .landPageP .pageContent .screen9 .screenWrap .contactArea a:hover {
+        color: var(--link-hover-color);
+    }
+
+    /* End */
+    :root {
+        --logo: url(data:image/png;base64,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);
+    }
+}
+
+@-moz-document domain("support.lingodeer.com") {
+    body {
+        background-color: #212121;
+    }
+
+    /* Content */
+    .help-center,
+    .c-wrapper,
+    .content,
+    .help-center-sc {
+        background-color: #323232;
+        border-color: #111;
+    }
+
+    .help-center-sc .hc-search .hc-search-button .btn-primary {
+        background-color: #434343;
+    }
+
+    .help-center-sc .hc-search .hc-search-button .btn-primary i {
+        filter: invert();
+    }
+
+    .heading,
+    .article-list ul li::before,
+    .fc-article-show p,
+    .list-lead {
+        color: var(--text-color);
+    }
+
+    .item-count,
+    .solution-print--icon .text-print {
+        color: var(--text-dark-color);
+    }
+
+    .cs-s h3 a,
+    .links-inherit a,
+    .list-lead a,
+    .breadcrumb a,
+    .article-vote .vote-up,
+    .article-vote .vote-down {
+        color: var(--link-color);
+    }
+
+    .cs-s h3 a:hover,
+    .links-inherit a:hover,
+    .list-lead a:hover,
+    .breadcrumb a:hover,
+    .article-vote .vote-up:hover,
+    .article-vote .vote-down:hover {
+        color: var(--link-hover-color);
+    }
+
+    /* Header */
+    .banner,
+    .page-tabs {
+        background-color: #323232;
+        border-color: #111;
+    }
+
+    .banner-title .heading {
+        color: var(--text-color);
+    }
+
+    .banner-nav .banner-language-selector .language-options .dropdown-toggle,
+    .banner-nav .banner-language-selector .language-options .dropdown-menu a,
+    .page-tabs .nav-link a {
+        color: var(--link-color);
+    }
+
+    .banner-nav .banner-language-selector .language-options .dropdown-toggle:hover,
+    .banner-nav .banner-language-selector .language-options .dropdown-menu a:hover,
+    .page-tabs .nav-link a.active,
+    .page-tabs .nav-link a:hover {
+        color: var(--link-hover-color);
+    }
+
+    .banner-nav .banner-language-selector .language-options .dropdown-menu,
+    .banner-nav .banner-language-selector .language-options .dropdown-menu a {
+        background-color: #434343;
+    }
+
+    .banner-nav .banner-language-selector .language-options .dropdown-menu a:hover {
+        background-color: #535353;
+    }
+}
