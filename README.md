@@ -12,3 +12,9 @@ To install and use these styles you'll need a CSS customization add-on for your 
 Supports home, support, and the actual lesson pages.
 
 [Install this theme](https://raw.githubusercontent.com/urbancmc/userstyles/master/LingoDark/lingodark.user.css)
+
+# PCGamingWiki Dark
+**Dark PCGamingWiki theme**.
+Supports wiki pages and community file download.
+
+[Install this theme](https://raw.githubusercontent.com/urbancmc/userstyles/master/PCGamingWiki-Dark/pcgw-dark.user.css)

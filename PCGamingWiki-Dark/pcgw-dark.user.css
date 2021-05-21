@@ -1,0 +1,118 @@
+/* ==UserStyle==
+@name           PCGamingWiki Dark
+@namespace      github.com/urbancmc/userstyles
+@version        2021.5.21
+@description    Dark mode for PCGamingWiki
+@author         UrbanCMC
+@homepageURL    https://github.com/urbancmc/userstyles
+@supportURL     https://github.com/urbancmc/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/urbancmc/userstyles/master/PCGamingWiki-Dark/pcgw-dark.user.css
+@license        MIT
+@var color text-color "Text color" #f1f2f3
+@var color link-color "Link color" #3b788c
+@var color link-hover-color "Link hover color" #478ea6
+==/UserStyle== */
+@-moz-document domain("pcgamingwiki.com") {
+    html,
+    body {
+        background-color: #212121;
+    }
+
+    #main-content {
+        background-color: #323232;
+        color: var(--text-color);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .template-infobox,
+    .pcgwikitable {
+        color: var(--text-color);
+    }
+
+    .collapsibletoc-section-toggle {
+        color: var(--text-color) !important;
+    }
+
+    a,
+    .mw-parser-output a.external {
+        color: var(--link-color);
+    }
+
+    a:hover,
+    .mw-parser-output a.external:hover {
+        color: var(--link-hover-color);
+    }
+
+    .template-infotable-body:nth-of-type(2n+1),
+    .page-normaltable tr:nth-child(2n+1),
+    #catlinks {
+        background-color: #323232 !important;
+        ;
+    }
+
+    .template-infotable-body:nth-of-type(2n),
+    .pcgwikitable,
+    .article-image,
+    .template-infobox,
+    ol.references li:target,
+    sup.reference:target {
+        background-color: #232323;
+    }
+
+    table.template-seriesbox tbody,
+    table.template-tocbox {
+        background-color: #232323;
+        color: var(--text-color);
+    }
+
+    kbd {
+        background-color: #444;
+        border-color: #111;
+    }
+}
+
+@-moz-document url-prefix("https://community.pcgamingwiki.com/files/file/") {
+    .ipsBox {
+        background-color: #434343 !important;
+        border-color: #111 !important;
+    }
+
+    .ipsColumns,
+    .ipsWidget.ipsWidget_vertical .ipsWidget_title {
+        background-color: #323232;
+        color: var(--text-color);
+    }
+
+    .ipsTabs_panel {
+        background-color: #232323;
+    }
+
+    .ipsComment_header {
+        background-color: #323232 !important;
+        border-color: #111 !important;
+    }
+
+    .ipsPad {
+        background-color: #434343;
+    }
+
+    .ipsBreadcrumb > ul > li > a {
+        color: var(--link-color) !important;
+    }
+
+    .ipsBreadcrumb > ul > li > a:hover {
+        color: var(--link-hover-color) !important;
+    }
+
+    .ipsType_pageTitle,
+    .ipsType_sectionHead,
+    .ipsType_richText,
+    .ipsBreadcrumb > ul > li {
+        color: var(--text-color);
+    }
+}
