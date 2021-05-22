@@ -1,12 +1,11 @@
 /* ==UserStyle==
 @name           PCGamingWiki Dark
 @namespace      github.com/urbancmc/userstyles
-@version        2021.5.21
+@version        2021.5.22
 @description    Dark mode for PCGamingWiki
 @author         UrbanCMC
 @homepageURL    https://github.com/urbancmc/userstyles
 @supportURL     https://github.com/urbancmc/userstyles/issues
-@updateURL      https://raw.githubusercontent.com/urbancmc/userstyles/master/PCGamingWiki-Dark/pcgw-dark.user.css
 @license        MIT
 @var color text-color "Text color" #f1f2f3
 @var color link-color "Link color" #3b788c
@@ -30,7 +29,23 @@
     h5,
     h6,
     .template-infobox,
-    .pcgwikitable {
+    .pcgwikitable,
+    .editing-guide-list-item a,
+    .editing-guide-list-item a.new,
+    .editing-guide-list-item a.new:visited,
+    table.wikitable,
+    .wikiEditor-ui-text textarea,
+    .wikiEditor-ui-toolbar .tabs span.tab a.current,
+    .wikiEditor-ui-toolbar .tabs span.tab a.current:visited,
+    .wikiEditor-ui-toolbar .group .label,
+    .wikiEditor-ui-toolbar .group .tool-select .label,
+    .wikiEditor-ui-toolbar .group .tool-select .options .option,
+    .wikiEditor-ui-toolbar .booklet .index .current,
+    .wikiEditor-ui-toolbar .page-table th,
+    .wikiEditor-ui-toolbar .page-table td,
+    #pagehistory li.selected,
+    select,
+    input {
         color: var(--text-color);
     }
 
@@ -39,40 +54,108 @@
     }
 
     a,
-    .mw-parser-output a.external {
+    .mw-parser-output a.external,
+    .mw-parser-output a.extiw,
+    .mw-parser-output a.extiw:active,
+    .wikiEditor-ui-toolbar .tabs span.tab a,
+    .wikiEditor-ui-toolbar .tabs span.tab a:visited,
+    .wikiEditor-ui-toolbar .booklet .index div {
         color: var(--link-color);
     }
 
     a:hover,
-    .mw-parser-output a.external:hover {
+    .mw-parser-output a.external:hover,
+    .editing-guide-list-item a:hover,
+    .editing-guide-list-item a.new:hover,
+    .editing-guide-list-item a.new:visited:hover,
+    .mw-parser-output a.extiw:hover,
+    .mw-parser-output a.extiw:active:hover,
+    .wikiEditor-ui-toolbar .tabs span.tab a:hover,
+    .wikiEditor-ui-toolbar .tabs span.tab a:visited:hover {
         color: var(--link-hover-color);
     }
 
     .template-infotable-body:nth-of-type(2n+1),
     .page-normaltable tr:nth-child(2n+1),
+    .table-generic-body-row:nth-of-type(2n+1),
     #catlinks {
         background-color: #323232 !important;
         ;
     }
 
     .template-infotable-body:nth-of-type(2n),
+    .table-generic-body-row:nth-of-type(2n),
     .pcgwikitable,
     .article-image,
     .template-infobox,
     ol.references li:target,
-    sup.reference:target {
+    sup.reference:target,
+    .editing-guide-list-item,
+    table.wikitable,
+    table.wikitable > tr > th,
+    table.wikitable > * > tr > th,
+    #wikiEditor-ui-toolbar {
         background-color: #232323;
     }
 
+    table.wikitable > tr > th,
+    table.wikitable > tr > td,
+    table.wikitable > * > tr > th,
+    table.wikitable > * > tr > td,
+    pre, .mw-code,
+    .wikiEditor-ui .wikiEditor-ui-top,
+    .wikiEditor-ui .wikiEditor-ui-view,
+    .wikiEditor-ui-toolbar .page-characters div span,
+    #pagehistory li {
+        border-color: #111;
+    }
+
     table.template-seriesbox tbody,
-    table.template-tocbox {
+    table.template-tocbox,
+    .project-intro,
+    pre, .mw-code,
+    .wikiEditor-ui-toolbar .page-characters div span {
         background-color: #232323;
         color: var(--text-color);
     }
 
-    kbd {
+    kbd,
+    .editing-guide-list-item:hover,
+    .editing-guide-list-item:focus,
+    .wikiEditor-ui-text textarea,
+    .wikiEditor-ui-toolbar .group .tool-select,
+    .wikiEditor-ui-toolbar .group .tool-select .menu .options,
+    .wikiEditor-ui-toolbar .booklet .index div:hover,
+    .wikiEditor-ui-toolbar .booklet .pages,
+    .wikiEditor-ui-toolbar .page-characters div span:hover,
+    #pagehistory li.selected,
+    select,
+    input {
         background-color: #444;
         border-color: #111;
+    }
+
+    .wikiEditor-ui-toolbar .booklet .index .current,
+    .wikiEditor-ui-toolbar .group .tool-select .options .option:hover {
+        background-color: #555;
+    }
+
+    .sysreqTab:not(.selectedTab) {
+        background-color: #38497c;
+        border-color: #38497c;
+    }
+
+    input.mw-history-compareselectedversions-button {
+        background-color: #232323;
+        border-color: #111;
+        color: var(--text-color);
+    }
+
+    .oo-ui-iconElement-icon,
+    #wikiEditor-section-main .tool-button,
+    #wikiEditor-section-advanced .tool-button,
+    #wikiEditor-section-section-templates .tool-button {
+        filter: invert();
     }
 }
 
