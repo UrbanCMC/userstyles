@@ -154,7 +154,10 @@
     .oo-ui-iconElement-icon,
     #wikiEditor-section-main .tool-button,
     #wikiEditor-section-advanced .tool-button,
-    #wikiEditor-section-section-templates .tool-button {
+    #wikiEditor-section-section-templates .tool-button,
+    .svg-icon.fixbox-icon,
+    .svg-icon.more-info,
+    .svg-icon.os-windows {
         filter: invert();
     }
 }
