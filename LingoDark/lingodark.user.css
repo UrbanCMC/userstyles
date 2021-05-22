@@ -1,12 +1,11 @@
 /* ==UserStyle==
 @name           LingoDark
 @namespace      github.com/urbancmc/userstyles
-@version        2021.5.21
+@version        2021.5.22
 @description    Dark mode implementation for LingoDeer
 @author         UrbanCMC
 @homepageURL    https://github.com/urbancmc/userstyles
 @supportURL     https://github.com/urbancmc/userstyles/issues
-@updateURL      https://raw.githubusercontent.com/urbancmc/userstyles/master/LingoDark/lingodark.user.css
 @license        MIT
 @var color text-color "Text color" #f1f2f3
 @var color text-dark-color "Dark text color" #b3b3b3
@@ -156,7 +155,10 @@
     .article .table .tr .td,
     .article .row,
     .article .row .col,
-    .linkList .link {
+    .linkList .link,
+    .optionsArea .option .item,
+    .stemArea .stemOption .item,
+    .stemArea .stemOption .stemItem {
         border-color: #767676 !important;
     }
 
